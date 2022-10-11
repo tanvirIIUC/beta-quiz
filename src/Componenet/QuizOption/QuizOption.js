@@ -7,16 +7,16 @@ const QuizOption = ({option,correctAnswer}) => {
     //    console.log(option);
        if(option===correctAnswer){
         // console.log('True')
-        toast("Wow so easy!")
+        toast("Correct Answer!")
        }
        else {
-        console.log("false");
+        toast("Wrong Answer!")
        }
     }
     
     
     return (
-        <div>
+        <div className='p-1'>
             
             <div class="form-check">
             <input onClick={()=>check(option)} class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
@@ -26,6 +26,7 @@ const QuizOption = ({option,correctAnswer}) => {
             </label>
             <ToastContainer />
          </div>
+       
         
         </div>
     );
