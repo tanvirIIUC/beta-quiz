@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const Header = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-primary text-light ">
   <div className="container-fluid">
     <div className='fw-bolder ms-5'>
         <h1>BETA QUIZ</h1>
@@ -16,17 +16,17 @@ const Header = () => {
      
       </ul>
     
-      <div className='me-5'>
+      <div className='me-5 '>
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-            <Link className='nav-link' to='/'>Topics</Link>
+            <Link className='nav-link text-light fw-bold ' to='/'>Topics</Link>
           
         </li>
         <li className="nav-item">
-           <Link className='nav-link' to='/statistics'>Statistics</Link>
+           <Link className='nav-link text-light fw-bold' to='/statistics'>Statistics</Link>
         </li>
         <li className="nav-item">
-        <Link className='nav-link' to='/blog'>Blogs</Link>
+        <Link className='nav-link text-light fw-bold' to='/blog'>Blogs</Link>
         </li>
       </ul>
       </div>
