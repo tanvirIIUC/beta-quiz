@@ -12,10 +12,10 @@ const QuizShow = ({quiz}) => {
     }
      console.log(quiz);
     return (
-        <div className='p-5 border m-5 bg-info d-flex justify-content-between'>
+        <div className='p-5 border rounded m-5 bg-info d-flex justify-content-between'>
             
             <div className=''>
-            <h4>Ques : {quiz.question}</h4>
+            <h4>Ques : {quiz.question.slice(3,quiz.question.length-4 )}</h4>
             
             <div>
                 {
