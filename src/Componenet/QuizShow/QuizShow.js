@@ -10,7 +10,7 @@ const QuizShow = ({quiz}) => {
     function ans(){
         toast(correctAnswer);
     }
-     console.log(quiz);
+    //  console.log(quiz);
     return (
         <div className='p-5 border rounded m-5 bg-info d-flex justify-content-between'>
             

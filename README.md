@@ -1,6 +1,6 @@
 # BETA QUIZ
 
-Live website link : [Beta quiz](https://github.com/facebook/create-react-app).
+Live website link : [Beta quiz](https://steady-hummingbird-0d4932.netlify.app/blog).
 
 ## Description :
 
