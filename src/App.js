@@ -7,6 +7,7 @@ import Statistics from './Componenet/Statistics/Statistics';
 import Blog from './Componenet/Blog/Blog';
 import Reacts from './Componenet/React/Reacts';
 import Quiz from './Componenet/Quiz/Quiz';
+import Home from './Componenet/Home/Home';
 
 
 function App() {
@@ -18,6 +19,11 @@ function App() {
           children: [
             {
               path : '/',
+              loader: () =>fetch('https://openapi.programming-hero.com/api/quiz'),
+              element: <Home></Home>
+            },
+            {
+              path : '/topic',
               loader: () =>fetch('https://openapi.programming-hero.com/api/quiz'),
               element: <Topics></Topics>
             },
