@@ -10,12 +10,13 @@ const QuizShow = ({quiz}) => {
     function ans(){
         toast(correctAnswer);
     }
-    // console.log(quiz);
+     console.log(quiz);
     return (
         <div className='p-5 border m-5 bg-info d-flex justify-content-between'>
+            
             <div className=''>
             <h4>Ques : {quiz.question}</h4>
-            {/* <h2>Ques : {quiz.correctAnswer}</h2> */}
+            
             <div>
                 {
                       quiz.options.map(option =><QuizOption option={option} correctAnswer={quiz.correctAnswer}></QuizOption>)
